@@ -8,10 +8,13 @@ const router = express.Router();
 
 router.get('/', shopController.getIndex);
 
+// path to main product page 
 router.get('/products', shopController.getProducts);
 
+// obtain product details
 router.get('/products/:productId', shopController.getProduct);
 
+// go to the shopping cart page 
 router.get('/cart', shopController.getCart);
 
 router.post('/cart', shopController.postCart);

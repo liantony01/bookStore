@@ -126,7 +126,7 @@ exports.postCartDeleteProduct = (req, res, next) => {
       console.log(err);
     });
 };
-
+// post in the database the order 
 exports.postOrder = (req, res, next) => {
   let fetchedCart;
   req.user
